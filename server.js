@@ -7,11 +7,11 @@ var io = require('socket.io').listen(server);
 app.use(express.static(path.join(__dirname + '/public'))); //Serves resources from public folder
 
 app.get('/',function(req,res){
-    res.sendFile("index2.html", { root: path.join(__dirname, 'public') })
+    res.sendFile("multi.html", { root: path.join(__dirname, 'public') })
 });
 
 app.get('/main',function(req,res){
-    res.sendFile("mainS.html", { root: path.join(__dirname, 'public') })
+    res.sendFile("mainPage.html", { root: path.join(__dirname, 'public') })
 });
 
 app.post('/main',function(req,res){
@@ -74,6 +74,7 @@ io.on('connection',function(socket){
         console.log('loading Clear');
         loading++;
         if(loading%4 ==0){
+            socket.broadcast.emit('delLoading');
             socket.broadcast.emit('allStart');
         }
     });
@@ -105,9 +106,5 @@ function getAllPlayers(self){
         if(player && player.id != self.id)
             players.push(player);
     });
-    /* for(var i in players.id)
-     {
-         console.log(players[i].id)+'testsetsetsdfasdf';
-     }*/
     return players;
 }
