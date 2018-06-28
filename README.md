@@ -28,6 +28,7 @@ Node.js 무료 호스팅 서비스인 Heroku 를 이용한 웹 사이트 호스�
 <img src = "./screenshots/1.png" />
 <img src = "./screenshots/2.png" />
 <br/><br/>
+
 ## 게임 실행 방법
 프로젝트 전체를 다운로드 후 Node.js v8.9.1 및 npm 설치 후 프로젝트가 설치된 디렉토리로 이동  
 ```
@@ -36,6 +37,7 @@ npm start
 를 입력하면 package.json 안의 의존성 모듈 설치 후 Server.js 실행  
 이후 http://127.0.0.1:3000/main 으로 접속하면 게임 플레이 가능
 <br/><br/>
+
 ## 사용한 라이브러리 및 라이센스, 버젼
 - Phaser 3  : MIT license    v3.4.0  
 - Node.js   : Apache-2.0     v8.9.1  
