@@ -1,5 +1,5 @@
 # 2018년 1학기 공개 SW 4조 RolyPoly
-# Phaser 3 와 node.js, Socket.io 를 이용한 웹게임 개발
+# Phaser 3 와 Node.js, Socket.io 를 이용한 웹게임 개발
 오픈소스 HTML5 게임 프레임워크 Phaser 3 와 Node.js, Socket.io 를 이용한 멀티플레이가 가능한 웹 게임의 개발 및  
 Node.js 무료 호스팅 서비스인 Heroku 를 통한 웹 페이지 호스팅
 <br/><br/>
@@ -24,6 +24,9 @@ Node.js 무료 호스팅 서비스인 Heroku 를 이용한 웹 사이트 호스�
 <br/><br/>
 ## 게임 플레이
 - https://phaser-hosting.herokuapp.com/main
+<br/>
+<img src = "./screenshots/1.png" />
+<img src = "./screenshots/2.png" />
 <br/><br/>
 ## 게임 실행 방법
 프로젝트 전체를 다운로드 후 Node.js v8.9.1 및 npm 설치 후 프로젝트가 설치된 디렉토리로 이동  
